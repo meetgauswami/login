@@ -3,11 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+import { BrowserRouter,  Routes, Route} from "react-router-dom";
+import Profile from './components/Profile';
+import ProtectedRoutes from './Services/ProtectedRoutes';
+import EditPofile from './components/EditPofile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <BrowserRouter>
+    <div>
+      <Routes>
+        <Route exact path="/" element={<App/>}/>
+        <Route exact path="/login" element={<Login />}/>
+        <Route exact path="/signup" element={<SignUp />}/>
+        <Route path='/' element={<ProtectedRoutes />}>
+        <Route exact path="/profile" element={<Profile />}/>
+        <Route exact path="/editprofile" element={<EditPofile />}/>
+        </Route>
+        </Routes>
+    </div>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

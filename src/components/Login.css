@@ -1,0 +1,17 @@
+.container2nd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerLogin{
+    width: 60%;
+}
+
+
+@media (max-width: 768px) {
+    .containerLogin{
+        width: 85%;
+        height: 100%;
+        margin-top: 10rem;
+      }
+  }
