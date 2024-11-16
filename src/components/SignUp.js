@@ -20,7 +20,7 @@ const SignUp = () => {
         e.preventDefault();
         localStorage.setItem("user", JSON.stringify(input));
         navigate("/login")
-        alert('Your Account Successfully Created, Login And Go in Your Profile')
+        alert('Your Account Successfully Created, Login And Go To Your Profile')
     }
 
 
