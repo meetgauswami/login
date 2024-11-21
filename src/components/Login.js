@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import './Login.css'
-import { Navigate } from 'react-router-dom'
 
 const Login = () => {
 
@@ -37,17 +36,17 @@ const Login = () => {
                                 <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg" className="img-fluid rounded-start" alt="..." />
                             </div>
                             <div className="col-md-8 btn-box" style={{padding: "1rem"}}>
-                                <form onSubmit={handleLogin} class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="inputEmail4" class="form-label">Email</label>
-                                        <input name='email' value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })}  type="email" class="form-control" id="inputEmail4"/>
+                                <form onSubmit={handleLogin} className="row g-3">
+                                    <div className="col-md-6">
+                                        <label htmlhtmlFor="inputEmail4" className="form-label">Email</label>
+                                        <input name='email' value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })}  type="email" className="form-control" id="inputEmail4"/>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="inputPassword4" class="form-label">Password</label>
-                                        <input name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })}  type="password" class="form-control" id="inputPassword4"/>
+                                    <div className="col-md-6">
+                                        <label htmlhtmlFor="inputPassword4" className="form-label">Password</label>
+                                        <input name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })}  type="password" className="form-control" id="inputPassword4"/>
                                     </div>
-                                    <div class="col-12" style={{width: '100%', display: 'flex', justifyContent: 'center', marginTop: '4rem'}}>
-                                        <button type="submit" class="btn btn-primary" style={{width: '10rem', backgroundColor: 'rgb(13, 13, 88)'}}>Log in</button>
+                                    <div className="col-12" style={{width: '100%', display: 'flex', justifyContent: 'center', marginTop: '4rem'}}>
+                                        <button type="submit" className="btn btn-primary" style={{width: '10rem', backgroundColor: 'rgb(13, 13, 88)'}}>Log in</button>
                                     </div>
                                     <div className="info" style={{ width: '100%', display: 'flex', justifyContent: 'center'}}>
                                     <p>Don't have an account?</p> <Link to="/signup">Register New Account</Link>

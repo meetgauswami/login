@@ -8,13 +8,13 @@ function App() {
         <div className="mader-name">
         <h2>Made by @meet_gauswamii</h2>
         </div>
-        <div className="card mb-3" style={{ width: "70%"}}>
-          <div className="row g-0 container">
+        <div className="card mb-3" style={{ width: "70%", display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '5rem'}}>
+          <div className="row g-0 container" style={{width: '100%'}}>
             <div className="col-md-4">
               <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg" className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-8 btn-box">
-                <div className="buttons">
+                <div className="buttons" style={{}}>
                   <Link to="/login">Log In</Link>
                   <Link to="/signup">Sign Up</Link>
                 </div>

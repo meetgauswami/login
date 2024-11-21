@@ -1,6 +1,6 @@
 import React from 'react'
 import './Profile.css'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Profile = () => {
 
@@ -23,17 +23,11 @@ const Profile = () => {
         <div className="mader-name">
         <h2>Made by @meet_gauswamii</h2>
         </div>
-        <div class="card1" style={{padding: '1rem'}}>
+        <div className="card1" style={{padding: '1rem'}}>
                 <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-PNG-Image-Transparent-Background.png" alt={userName.name} style={{width:"100%"}} />
                 <p>Welcome, {userName.name}</p>
                 <h1>{userName.name}</h1>
-                <p class="title">{userName.email}</p>
-                <div className="as">
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                </div>
+                <p className="title">{userName.email}</p>
                 <p><button type='button' onClick={EditProfile} >Edit Profile</button></p>
                 <p><button type='button' onClick={handleLogout}>Logout</button></p>
             </div>
